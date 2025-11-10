@@ -284,13 +284,13 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Existing methods for extracting reward signals in Reinforcement Learning typically rely on labeled data and dedicated training splits, a setup that contrasts with how humans learn directly from their environment.
-In this work, we propose TTRV to enhance vision–language understanding by adapting the model on-the-fly at inference time, without the need for any labeled data.
-Concretely, we enhance the Group Relative Policy Optimization (GRPO) framework by designing rewards based on the frequency of the base model's output, while inferring on each test sample multiple times.
-Further, we also propose to control the diversity of the model's output by simultaneously rewarding the model for obtaining low entropy of the output empirical distribution.
-Our approach delivers consistent gains across both object recognition and visual question answering (VQA), with improvements of up to 52.4% and 29.8%, respectively, and average boosts of 24.6% and 10.0% across 16 datasets. 
-Remarkably, on image recognition, TTRV applied to Intern-VL-8B surpasses GPT-4o by an average of 2.3% over 8 benchmarks, while remaining highly competitive on VQA, demonstrating that test-time reinforcement learning can match or exceed the strongest proprietary models. 
-Finally, we find many interesting properties of test-time RL for VLMs: for example, even in extremely data-constrained scenarios, where adaptation is performed on a single randomly chosen unlabeled test example, TTRV still yields non-trivial improvements of up to 5.5% in recognition tasks.
+            We address the Federated source-Free Domain Adaptation (FFreeDA) problem, with clients holding unlabeled data with significant inter-client domain gaps. The FFreeDA setup constrains the FL frameworks to employ only a pre-trained server model as the setup restricts access to the source dataset during the training rounds. Often, this source domain dataset has a distinct distribution to the clients’ domains. 
+          </p>
+          <p> 
+            To address the challenges posed by the FFreeDA setup, adaptation of the Source-Free Domain Adaptation (SFDA) methods to FL struggles with clientdrift in real-world scenarios due to extreme data heterogeneity caused by the aforementioned domain gaps, resulting in unreliable pseudo-labels. In this paper, we introduce FedSCAl, an FL framework leveraging our proposed Server-Client Alignment (SCAl) mechanism to regularize client updates by aligning the clients’ and server model’s predictions. 
+          </p>
+          <p>
+            We observe an improvement in the clients’ pseudo-labeling accuracy post alignment, as the SCAl mechanism helps to mitigate the client-drift. Further, we present extensive experiments on benchmark vision datasets showcasing how FedSCAl consistently outperforms state-of-the-art FL methods in the FFreeDA setup for classification tasks.          
           </p>
         </div>
       </div>

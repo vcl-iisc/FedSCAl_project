@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="FedSCAl: Leveraging Server and Client Alignment for Unsupervised Federated Source-Free Domain Adaptation">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="fedscal, unsupervised federated learning, Server and Client Alignment, vcl, federated learning, domain adaptation, source-free domain adaptation">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="Akshit Singh, M. Jehanzeb Mirza, James Glass, Sivan Doveh, Serena Yeung-Levy, Rogerio Feris, Hilde Kuehne">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="MIT, Stanford">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="Akshit Singh, M. Jehanzeb Mirza, James Glass, Sivan Doveh, Serena Yeung-Levy, Rogerio Feris, Hilde Kuehne">
+  <meta name="citation_author" content="Akshit Singh, M. Jehanzeb Mirza, James Glass, Sivan Doveh, Serena Yeung-Levy, Rogerio Feris, Hilde Kuehne">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_conference_title" content="ICLR">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>TTRV | Academic Research</title>
+  
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "TTRV",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">TTRV: Test-Time Reinforcement Learning for Vision Language Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=CNgbNc8AAAAJ&hl=en" target="_blank">Akshit Singh</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=tg4LJ94AAAAJ&hl=en" target="_blank">Shyam Marjit</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://wlin-at.github.io/" target="_blank">Wei Lin</a><sup>3</sup>,</span>
+              <span class="author-block">
+                    <a href="https://paulgavrikov.github.io/" target="_blank">Paul Gavrikov</a><sup>1</sup>,</span>
+              <span class="author-block">
+                    <a href="https://ai.stanford.edu/~syyeung/" target="_blank">Serena Yeung-Levy</a><sup>4</sup>,</span>
+              <span class="author-block">
+                    <a href="https://hildekuehne.github.io/" target="_blank">Hilde Kuehne</a><sup>5,6</sup>,</span>
+              <span class="author-block">
+                    <a href="https://www.rogerioferis.org/" target="_blank">Rogerio Feris</a><sup>6</sup>,</span>
+              <span class="author-block">
+                    <a href="https://sivandoveh.github.io/" target="_blank">Sivan Doveh</a><sup>4</sup>,</span>
+              <span class="author-block">
+                    <a href="https://people.csail.mit.edu/jrg/" target="_blank">James Glass</a><sup>7</sup>,</span>
+
+              <span class="author-block">
+                    <a href="https://jmiemirza.github.io/" target="_blank">M. Jehanzeb Mirza</a><sup>7</sup>
+      
+      
+              
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <span class="author-block"><sup>1</sup>Independent Researcher</span>
+                    <span class="author-block"><sup>2</sup>IISc Bangalore</span>
+                    <span class="author-block"><sup>3</sup>JKU Linz</span>
+                    <span class="author-block"><sup>4</sup>Stanford</span>
+                    <span class="author-block"><sup>5</sup>Tübingen AI Center</span>
+                    <span class="author-block"><sup>6</sup>MIT-IBM Watson AI Lab</span>
+                    <span class="author-block"><sup>7</sup>MIT CSAIL</span>
+                    <!-- TODO: Remove this line if no equal contribution -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- TODO: Update with your arXiv paper ID -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2510.06783" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://github.com/Akshit21112002/TTRV" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- TODO: Update with your arXiv paper ID -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2510.06783" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+      <img src="static/images/TTRV-new order teaser.drawio.png" alt="First research result visualization" loading="lazy"/>
+      
+      <!-- TODO: Replace with your video description -->
+      <p>
+        Unlike prior methods that require pre-training splits and post-training via Supervised Finetuning (SFT) or Reinforcement Learning (RL), our approach extracts reward signals directly at test time from unlabeled data. The reward combines (1) frequency-based signals and (2) diversity control, allowing the model to adapt online and improve downstream vision performance without any labeled data. (right) Test accuracy increases while entropy of the output logits decreases, showing that the model becomes more accurate and less uncertain as test-time RL progresses. The solid lines represent the mean, and shaded regions represent the variance of results obtained over 5 independent runs. The dataset is Resics45, task is object recognition, and the model is InternVL-3-2B
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Existing methods for extracting reward signals in Reinforcement Learning typically rely on labeled data and dedicated training splits, a setup that contrasts with how humans learn directly from their environment.
+In this work, we propose TTRV to enhance vision–language understanding by adapting the model on-the-fly at inference time, without the need for any labeled data.
+Concretely, we enhance the Group Relative Policy Optimization (GRPO) framework by designing rewards based on the frequency of the base model's output, while inferring on each test sample multiple times.
+Further, we also propose to control the diversity of the model's output by simultaneously rewarding the model for obtaining low entropy of the output empirical distribution.
+Our approach delivers consistent gains across both object recognition and visual question answering (VQA), with improvements of up to 52.4% and 29.8%, respectively, and average boosts of 24.6% and 10.0% across 16 datasets. 
+Remarkably, on image recognition, TTRV applied to Intern-VL-8B surpasses GPT-4o by an average of 2.3% over 8 benchmarks, while remaining highly competitive on VQA, demonstrating that test-time reinforcement learning can match or exceed the strongest proprietary models. 
+Finally, we find many interesting properties of test-time RL for VLMs: for example, even in extremely data-constrained scenarios, where adaptation is performed on a single randomly chosen unlabeled test example, TTRV still yields non-trivial improvements of up to 5.5% in recognition tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Method Section -->
+<section class="section" id="method">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Method</h2>
+    <figure>
+      <img src="static/images/TTRV-main_table_final.png" alt="Method Overview" style="width:80%;">
+      <p class="caption" style="text-align: left; margin-top: 0.5em;"> Overview of TTRV. For each prompt x, the VLM generates N candidate responses.  
+    These samples induce an empirical distribution over the unique outputs, from which two reward signals are derived:  
+    (i) a frequency-based reward, where each response is rewarded in proportion to how often its output occurs among the N responses (ie its empirical probability in the distribution), and  
+    (ii) a diversity control reward, computed from the distribution to regulate diversity and encourage convergence.  
+The final reward is the weighted combination of these terms, which is used to update the policy via GRPO.</p>
+    </figure>
+  </div>
+</section>
+<!-- End Method Section -->
+
+<!-- Result Section -->
+<section class="section" id="result">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Results</h2>
+    <figure>
+      <img src="static/images/result_ttrv.png" alt="Experimental Results" style="width:90%;">
+      <!-- <p class="caption">Figure 2: Qualitative results comparing our method against baseline approaches. Our approach achieves more accurate and consistent predictions.</p> -->
+    </figure>
+  </div>
+</section>
+<!-- End Result Section -->
+
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{singh2025ttrv,
+  title={TTRV: Test-Time Reinforcement Learning for Vision Language Models,
+  author={Singh, Akshit and Marjit, Shyam and Lin, Wei and Gavrikov, Paul and Yeung-Levy, Serena and Kuehne, Hilde and Feris, Rogerio and Doveh, Sivan and Glass, James and Mirza, M Jehanzeb},
+  journal={arXiv preprint arXiv:2510.06783},
+  year={2025}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

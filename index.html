@@ -305,12 +305,19 @@
   <div class="container is-max-desktop content">
     <h2 class="title">Method</h2>
     <figure>
-      <img src="static/images/TTRV-main_table_final.png" alt="Method Overview" style="width:80%;">
-      <p class="caption" style="text-align: left; margin-top: 0.5em;"> Overview of TTRV. For each prompt x, the VLM generates N candidate responses.  
-    These samples induce an empirical distribution over the unique outputs, from which two reward signals are derived:  
-    (i) a frequency-based reward, where each response is rewarded in proportion to how often its output occurs among the N responses (ie its empirical probability in the distribution), and  
-    (ii) a diversity control reward, computed from the distribution to regulate diversity and encourage convergence.  
-The final reward is the weighted combination of these terms, which is used to update the policy via GRPO.</p>
+      <img src="static/images/fedscal_main_fig.png" alt="Method Overview" style="width:80%;">
+      <p class="caption" style="text-align: left; margin-top: 0.5em;"> 
+Overview of the proposed <b>FedSCAI framework with Server and Client Alignment (SCAI)</b> implementation.
+The server communicates the global model <b>w<sup>r</sup></b> to the clients. 
+The clients then train their local models (<b>w<sup>r</sup><sub>k</sub></b>) using a weak augmentation <i>A<sub>w</sub></i>, 
+giving us the augmented image <i>A<sub>w</sub>(x<sup>i</sup><sub>k</sub>)</i>, 
+and a strong augmentation <i>A<sub>s</sub></i> from which we get the augmented image 
+<i>A<sub>s</sub>(x<sup>i</sup><sub>k</sub>)</i>. 
+The clients compute the client alignment loss: <i>L<sup>i</sup><sub>l,k</sub></i> and the server alignment loss: 
+<i>L<sup>i</sup><sub>g,k</sub></i> to perform the local training using Eq.&nbsp;12, 
+and then communicate the updated local models <b>w<sup>r</sup><sub>k</sub></b> to the server in the subsequent round for aggregation.
+
+</p>
     </figure>
   </div>
 </section>

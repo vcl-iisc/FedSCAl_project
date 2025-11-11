@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
   <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
@@ -318,11 +318,11 @@ The clients compute the client alignment loss: <i>L<sup>i</sup><sub>l,k</sub></i
 and then communicate the updated local models <b>w<sup>r</sup><sub>k</sub></b> to the server in the subsequent round for aggregation. -->
 
 Overview of the proposed <b>FedSCAI framework with Server and Client Alignment (SCAI)</b> implementation. 
-The server communicates the global model $$ \mathbf{w}^r $$ to the clients, the clients then train their local models 
-$$ \mathbf{w}^r_k $$ using a weak augmentation $$ A_w $$ giving us the augmented image $$ A_w(x^i_k) $$, 
-and a strong augmentation $$ A_s $$ from which we get the augmented image $$ A_s(x^i_k) $$. 
-The clients compute the client alignment loss: $$ L^{i}_{l,k} $$ and the server alignment loss: $$ L^{i}_{g,k} $$
-to perform the local training using the Eq.&nbsp;12, and then communicate the updated local models $$ \mathbf{w}^r_k $$
+The server communicates the global model \( \mathbf{w}^r \) to the clients, the clients then train their local models 
+\( \mathbf{w}^r_k \) using a weak augmentation \( A_w \) giving us the augmented image \( A_w(x^i_k) \), 
+and a strong augmentation \( A_s \) from which we get the augmented image \( A_s(x^i_k) \). 
+The clients compute the client alignment loss: \( L^{i}_{l,k} \) and the server alignment loss: \( L^{i}_{g,k} \)
+to perform the local training using the below equation $$ l_k(\mathbf{w}) = L_k^{LoA} + L_k^{SCAl} $$ and then communicate the updated local models \( \mathbf{w}^r_k \)
 to the server in the subsequent round for aggregation.
 </p>
     </figure>

@@ -218,8 +218,20 @@
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
+
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2510.06783" target="_blank"
+                        <a href="https://vcl-iisc.github.io/FedSCAl/" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fa fa-youtube-play"></i>
+                        </span>
+                      <span>YouTube</span>
+                      </a>
+                      </span>
+
+
+                      <span class="link-block">
+                        <a href="https://vcl-iisc.github.io/FedSCAl/" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -231,7 +243,7 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/vcl-iisc/FedSCAl_code" target="_blank"
+                    <a href="https://vcl-iisc.github.io/FedSCAl/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -242,7 +254,7 @@
 
                 <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2510.06783" target="_blank"
+                  <a href="https://vcl-iisc.github.io/FedSCAl/" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -263,13 +275,15 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+    <div class="columns is-centered"> 
       <!-- TODO: Replace with your teaser video -->
-      <img src="static/images/TTRV-new order teaser.drawio.png" alt="First research result visualization" loading="lazy"/>
-      
+      <img src="static/images/wacv_26-teser.png" alt="First research result visualization" loading="lazy" style="width:78%;"/>
+      </div>
       <!-- TODO: Replace with your video description -->
       <p>
-        Unlike prior methods that require pre-training splits and post-training via Supervised Finetuning (SFT) or Reinforcement Learning (RL), our approach extracts reward signals directly at test time from unlabeled data. The reward combines (1) frequency-based signals and (2) diversity control, allowing the model to adapt online and improve downstream vision performance without any labeled data. (right) Test accuracy increases while entropy of the output logits decreases, showing that the model becomes more accurate and less uncertain as test-time RL progresses. The solid lines represent the mean, and shaded regions represent the variance of results obtained over 5 independent runs. The dataset is Resics45, task is object recognition, and the model is InternVL-3-2B
+        (a) \( \textit{FFreeDA Setup:}\) Multiple clients (labeled as \(\text{C}_1\), \(\text{C}_2\), \(\text{C}_3\), and \(\text{C}_4\)) hold unlabeled data from same or different domains, while the central server uses a pre-trained model trained on a labeled source dataset, which differs from clients' data distributions and is unavailable during training. (b) Performance of different methods on <code>Office-Home</code> dataset.
       </p>
+    
     </div>
   </div>
 </section>
@@ -284,10 +298,10 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            We address the Federated source-Free Domain Adaptation (FFreeDA) problem, with clients holding unlabeled data with significant inter-client domain gaps. The FFreeDA setup constrains the FL frameworks to employ only a pre-trained server model as the setup restricts access to the source dataset during the training rounds. Often, this source domain dataset has a distinct distribution to the clients’ domains. 
+            We address the \(\textbf{Federated source-Free Domain Adaptation (FFreeDA)}\) problem, with clients holding unlabeled data with significant inter-client domain gaps. The FFreeDA setup constrains the FL frameworks to employ only a pre-trained server model as the setup restricts access to the source dataset during the training rounds. Often, this source domain dataset has a distinct distribution to the clients’ domains. 
           </p>
           <p> 
-            To address the challenges posed by the FFreeDA setup, adaptation of the Source-Free Domain Adaptation (SFDA) methods to FL struggles with clientdrift in real-world scenarios due to extreme data heterogeneity caused by the aforementioned domain gaps, resulting in unreliable pseudo-labels. In this paper, we introduce FedSCAl, an FL framework leveraging our proposed Server-Client Alignment (SCAl) mechanism to regularize client updates by aligning the clients’ and server model’s predictions. 
+            To address the challenges posed by the FFreeDA setup, adaptation of the Source-Free Domain Adaptation (SFDA) methods to FL struggles with clientdrift in real-world scenarios due to extreme data heterogeneity caused by the aforementioned domain gaps, resulting in unreliable pseudo-labels. In this paper, we introduce \(\textbf{FedSCAl}\), an FL framework leveraging our proposed Server-Client Alignment (SCAl) mechanism to regularize client updates by aligning the clients’ and server model’s predictions. 
           </p>
           <p>
             We observe an improvement in the clients’ pseudo-labeling accuracy post alignment, as the SCAl mechanism helps to mitigate the client-drift. Further, we present extensive experiments on benchmark vision datasets showcasing how FedSCAl consistently outperforms state-of-the-art FL methods in the FFreeDA setup for classification tasks.          
@@ -328,9 +342,14 @@ to perform the local training using the below equation $$ l_k(\mathbf{w}) = L_k^
 to the server in the subsequent round for aggregation.
 </p>
 <p>
-▷ <code> For more details, please refer to the method section of the main paper. 
-  
-</code>
+
+
+      <code>
+        <span style="color: rgb(218, 15, 57);">  
+        ▷ For more details, please refer to the method section of the main paper. </code> 
+      </span>
+      </code>  
+
 </p>
     </figure>
   </div>
@@ -343,16 +362,21 @@ to the server in the subsequent round for aggregation.
   <div class="container is-max-desktop content">
     <h2 class="title">Results</h2>
     <figure>
-      <img src="static/images/table_1.png" alt="Experimental Results" style="width:90%;">
+      <img src="static/images/table_1.png" alt="Experimental Results" style="width:99%;">
       <!-- <p class="caption">Figure 2: Qualitative results comparing our method against baseline approaches. Our approach achieves more accurate and consistent predictions.</p> -->
     </figure>
 
     <figure>
-      <img src="static/images/table_2.png" alt="Experimental Results" style="width:90%;">
+      <img src="static/images/table_2.png" alt="Experimental Results" style="width:99%;">
       <!-- <p class="caption">Figure 2: Qualitative results comparing our method against baseline approaches. Our approach achieves more accurate and consistent predictions.</p> -->
     </figure>
+    
     <div class="columns is-centered">
-          ▷ <code>For more results and ablation analysis, please refer to the the main paper and supplementary.</code> 
+      <code>
+        <span style="color: rgb(218, 15, 57);">  
+        ▷ For more results and ablation analysis, please refer to the the main paper and supplementary.</code> 
+      </span>
+      </code>  
     </div>
 
   </div>
@@ -360,7 +384,68 @@ to the server in the subsequent round for aggregation.
 <!-- End Result Section -->
 
 
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <!-- <div class="section-title has-text-centered is-centered"></div> -->
+    <!-- <h2 class="title is-3" style="display: flex; justify-content: center; align-items: center;"></h2> -->
+     <!-- <h2 class="title is-3 mathvista" style="display: flex; justify-content: center; align-items: center;">👻 DiffuseKronA vs. LoRA-DreamBooth</h2> -->
+    <div class="content has-text-justified">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <!-- <h3 class="title is-5">(1) Pseudo-label prediction Accuracy Difference</h3> -->
+           <!-- <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="./static/images/Pseudo-label.png" width="100%" height="100%">
+          </div> -->
+          <img src="./static/images/pseudo-label.png" width="100%" height="80%">
+          <br>
+            <p>
+            ▷ <code>Pseudo-label prediction accuracy difference</code> \(\Delta_{pAcc}\) (refer to Eq. 13 of the main paper) improves with the proposed SCAl mechanism
+on the <code>Office-Home</code> dataset, when the training is initialized with the server model pre-trained on different source domains (Art, ClipArt, Product & Real-World).
+            </p>
+          <br>
+          
+          
+        </div>
+      </div>
 
+      
+      
+      <div class="column">
+        <!-- <h3 class="title is-5"> (2) Entropy Density of Clients Predictions</h3> -->
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/entropy.png" width="100%" height="80%">
+            <p>
+              ▷ <code>Entropy density of the clients predictions on Office-Home</code> dataset, calculated via (refer to Eq. 14 of the main paper), exhibiting skewness (\(\gamma\)); with negative \(\gamma\) (e.g., \(\gamma=-0.1\)) indicating higher entropy and 
+              lower prediction confidence, while positive \(\gamma\) (e.g., \(\gamma\) = 0.15) reflecting lower entropy and higher prediction confidence.
+            </p>
+            
+          </div>
+
+        </div>
+      </div>
+
+      <div class="column">
+        <!-- <h3 class="title is-5"> (3) Effect of varying threshold </h3> -->
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/threshold.png" width="100%" height="100%">
+            <p>
+              ▷ <code>Effect of varying threshold</code> \(\tau_{init}\) (refer to Eq. 16 of the main paper) on the average accuracy attained by all the clients when the training is initialized with the server model pre-trained on Art, Clipart, Product, and Real-World.                
+            </p>
+            
+          </div>
+
+        </div>
+      </div>
+
+      
+
+    </div>
+
+  </div>
+</section>
 
 
 <!--BibTex citation -->
@@ -373,15 +458,15 @@ to the server in the subsequent round for aggregation.
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@InProceedings{Marjit_2025_WACV,
-        author    = {Marjit, Shyam and Singh, Harshit and Mathur, Nityanand and Paul, Sayak and Yu, Chia-Mu and Chen, Pin-Yu},
-        title     = {DiffuseKronA: A Parameter Efficient Fine-Tuning Method for Personalized Diffusion Models},
+      <pre id="bibtex-code"><code>@InProceedings{yashwanth_2026_WACV,
+        author    = {Yashwanth, M and Koti, Sampath and Singh, Arunabh and Marjit, Shyam and Chakraborty, Anirban},
+        title     = {FedSCAl: Leveraging Server and Client Alignment for Unsupervised Federated Source-Free Domain Adaptation},
         booktitle = {Proceedings of the Winter Conference on Applications of Computer Vision (WACV)},
-        month     = {February},
-        year      = {2025},
-        pages     = {3529-3538}
+        year      = {2026},
     }</code></pre>
     </div>
+    <!-- month     = {February}, -->
+        <!-- pages     = {3529-3538} -->
 </section>
 <!--End BibTex citation -->
 

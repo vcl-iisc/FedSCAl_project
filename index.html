@@ -303,7 +303,9 @@
 <!-- Method Section -->
 <section class="section" id="method">
   <div class="container is-max-desktop content">
+    
     <h2 class="title">Method</h2>
+    <div class="columns is-centered"> 
     <figure>
       <img src="static/images/fedscal_main_fig.png" alt="Method Overview" style="width:80%;">
       <p class="caption" style="text-align: left; margin-top: 0.5em;"> 
@@ -325,7 +327,13 @@ The clients compute the client alignment loss: \( L^{i}_{l,k} \) and the server 
 to perform the local training using the below equation $$ l_k(\mathbf{w}) = L_k^{LoA} + L_k^{SCAl} $$ and then communicate the updated local models \( \mathbf{w}^r_k \)
 to the server in the subsequent round for aggregation.
 </p>
+<p>
+▷ <code> For more details, please refer to the method section of the main paper. 
+  
+</code>
+</p>
     </figure>
+  </div>
   </div>
 </section>
 <!-- End Method Section -->
@@ -335,9 +343,18 @@ to the server in the subsequent round for aggregation.
   <div class="container is-max-desktop content">
     <h2 class="title">Results</h2>
     <figure>
-      <img src="static/images/result_ttrv.png" alt="Experimental Results" style="width:90%;">
+      <img src="static/images/table_1.png" alt="Experimental Results" style="width:90%;">
       <!-- <p class="caption">Figure 2: Qualitative results comparing our method against baseline approaches. Our approach achieves more accurate and consistent predictions.</p> -->
     </figure>
+
+    <figure>
+      <img src="static/images/table_2.png" alt="Experimental Results" style="width:90%;">
+      <!-- <p class="caption">Figure 2: Qualitative results comparing our method against baseline approaches. Our approach achieves more accurate and consistent predictions.</p> -->
+    </figure>
+    <div class="columns is-centered">
+          ▷ <code>For more results and ablation analysis, please refer to the the main paper and supplementary.</code> 
+    </div>
+
   </div>
 </section>
 <!-- End Result Section -->

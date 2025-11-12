@@ -222,12 +222,14 @@
 
                       <span class="link-block">
                         <a href="https://vcl-iisc.github.io/FedSCAl/" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fa fa-youtube-play"></i>
-                        </span>
-                      <span>YouTube</span>
-                      </a>
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" 
+                                alt="YouTube" 
+                                style="width: 50px; height: 50px; vertical-align: middle;">
+                          </span>
+                          <span>YouTube</span>
+                        </a>
                       </span>
 
 
@@ -275,20 +277,33 @@
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-    <div class="columns is-centered"> 
-      <!-- TODO: Replace with your teaser video -->
-      <img src="static/images/wacv_26-teser.png" alt="First research result visualization" loading="lazy" style="width:78%;"/>
-      </div>
-      <!-- TODO: Replace with your video description -->
-      <p>
-        (a) \( \textit{Federated source-Free Domain Adaptation (FFreeDA) Setup:}\) Multiple clients (labeled as \(\text{C}_1\), \(\text{C}_2\), \(\text{C}_3\), and \(\text{C}_4\)) hold unlabeled data from same or different domains, while the central server uses a pre-trained model trained on a labeled source dataset, which differs from clients' data distributions and is unavailable during training. 
+    <div class="hero-body has-text-centered">
+      <figure class="image">
+        <img src="static/images/wacv_26-teser.png"
+             alt="First research result visualization"
+             loading="lazy"
+             style="
+               max-width: 700px;    /* restrict size on desktop */
+               width: 90%;          /* flexible on tablet/mobile */
+               height: auto;
+               display: inline-block;
+             "/>
+      </figure>
+
+      <br>
+
+      <p style="text-align: left">
+        (a) <b><i>Federated source-Free Domain Adaptation (FFreeDA) Setup:</i></b> 
+        Multiple clients (labeled as \(\text{C}_1\), \(\text{C}_2\), \(\text{C}_3\), and \(\text{C}_4\)) 
+        hold unlabeled data from same or different domains, while the central server uses a 
+        pre-trained model trained on a labeled source dataset, which differs from clients' data 
+        distributions and is unavailable during training. 
         <br> (b) Performance of different methods on <code>Office-Home</code> dataset.
       </p>
-    
     </div>
   </div>
 </section>
+
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -299,8 +314,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
+
           <p>
-            We address the \(\textbf{Federated source-Free Domain Adaptation (FFreeDA)}\) problem, with clients holding unlabeled data with significant inter-client domain gaps. The FFreeDA setup constrains the FL frameworks to employ only a pre-trained server model as the setup restricts access to the source dataset during the training rounds. Often, this source domain dataset has a distinct distribution to the clients’ domains. 
+            We address the <b><i>Federated source-Free Domain Adaptation (FFreeDA)</i></b> problem, with clients holding unlabeled data with significant inter-client domain gaps. The FFreeDA setup constrains the FL frameworks to employ only a pre-trained server model as the setup restricts access to the source dataset during the training rounds. Often, this source domain dataset has a distinct distribution to the clients’ domains. 
           </p>
           <p> 
             To address the challenges posed by the FFreeDA setup, adaptation of the Source-Free Domain Adaptation (SFDA) methods to FL struggles with clientdrift in real-world scenarios due to extreme data heterogeneity caused by the aforementioned domain gaps, resulting in unreliable pseudo-labels. In this paper, we introduce \(\textbf{FedSCAl}\), an FL framework leveraging our proposed Server-Client Alignment (SCAl) mechanism to regularize client updates by aligning the clients’ and server model’s predictions. 
@@ -308,11 +324,14 @@
           <p>
             We observe an improvement in the clients’ pseudo-labeling accuracy post alignment, as the SCAl mechanism helps to mitigate the client-drift. Further, we present extensive experiments on benchmark vision datasets showcasing how FedSCAl consistently outperforms state-of-the-art FL methods in the FFreeDA setup for classification tasks.          
           </p>
-        </div>
+
+
+          </div>
       </div>
     </div>
   </div>
 </section>
+
 <!-- End paper abstract -->
 
 
